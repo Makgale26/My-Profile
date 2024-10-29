@@ -1,0 +1,149 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+}
+header {
+    background: #4CAF50;
+    padding: 10px 0;
+    text-align: center;
+    color: white;
+}
+header h1 {
+    margin: 0;
+}
+nav {
+    text-align: center;
+    background: #333;
+    padding: 10px 0;
+}
+nav a {
+    color: white;
+    padding: 10px 15px;
+    text-decoration: none;
+}
+nav a:hover {
+    background: #4CAF50;
+}
+section {
+    margin: 20px 0;
+}
+h2 {
+    color: #4CAF50;
+}
+.profile-pic {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin: 10px auto;
+    display: block;
+}
+.profile-pic:hover {
+            box-shadow: 0 0 15px rgba(255, 0, 255, 0.979), /* Yellow glow */
+                        0 0 30px rgba(255, 0, 255, 0.7), /* Orange glow */
+                        0 0 45px rgba(255, 0, 255, 0.5); /* Magenta glow */
+        }
+header {
+    background: #4CAF50;
+    padding: 20px 0;
+    text-align: center;
+    color: white;
+}
+/* Basic reset and styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Wrapper to push the footer to the bottom */
+.content-wrapper {
+    flex: 1;
+}
+
+/* Header Styling */
+header {
+    background: #4CAF50;
+    padding: 20px 0;
+    text-align: center;
+    color: white;
+}
+
+header h1 {
+    margin: 0;
+}
+
+/* Navigation Styling */
+nav {
+    text-align: center;
+    background: #333;
+    padding: 10px 0;
+}
+
+nav a {
+    color: white;
+    padding: 10px 15px;
+    text-decoration: none;
+}
+
+nav a:hover {
+    background: #4CAF50;
+}
+
+/* Footer Styling */
+.footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+}
+
+.footer a {
+    color: #4CAF50;
+    text-decoration: none;
+    padding: 0 5px;
+    transition: color 0.3s ease;
+}
+
+.footer a:hover {
+    color: #f4f4f4;
+    text-decoration: underline;
+}
+
+
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+}
+
+.skill-category {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 16px;
+    background-color: #f9f9f9;
+}
+
+.skill-category h2 {
+    margin-top: 0;
+    color: #333;
+}
+
+.skill-category img {
+    width: 300px;
+    height: 300px;
+}
+
