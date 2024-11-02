@@ -3,10 +3,13 @@ body {
     margin: 0;
     padding: 0;
     color: #333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Ensures the body is at least the height of the viewport */
+    margin: 0;
 }
 .container {
-    width: 80%;
-    margin: 0 auto;
+    flex: 1; /* Takes up remaining space, pushing the footer down */
     padding: 20px;
 }
 header {
@@ -112,7 +115,7 @@ nav a:hover {
 
 .footer a {
     color: #4CAF50;
-    text-decoration: none;
+    text-decoration: navajowhite;
     padding: 0 5px;
     transition: color 0.3s ease;
 }
@@ -130,11 +133,17 @@ nav a:hover {
     padding: 20px;
 }
 
+
 .skill-category {
     border: 1px solid #ccc;
     border-radius: 8px;
     padding: 16px;
     background-color: #f9f9f9;
+}
+.skill-category:hover{
+    box-shadow: 0 0 15px rgba(255, 251, 0, 0.979), /* Yellow glow */
+                0 0 30px rgba(238, 255, 0, 0.7), /* Orange glow */
+                0 0 45px rgba(255, 251, 0, 0.5); /* Magenta glow */
 }
 
 .skill-category h2 {
@@ -146,4 +155,29 @@ nav a:hover {
     width: 300px;
     height: 300px;
 }
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 10px;
+    padding: 10px;
+    background-color: #f9f9f9; /* Optional: light background for contrast */
+    border-radius: 10px; /* Optional: rounded corners for a softer look */
+}
+
+.gallery img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.gallery img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px rgba(255, 251, 0, 0.979),
+                0 0 35px rgba(238, 255, 0, 0.7),
+                0 0 50px rgba(255, 0, 251, 0.5);
+}
+
 
